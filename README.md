@@ -1,6 +1,6 @@
 # Projeto: POKEDEX
 
-Implementado a partir dos ensinamentos de [_Roger Melo_](https://www.youtube.com/@RogerMelo){:target="_blank"}, dos quais pude praticar e reforçar algumas técnicas como:
+Implementado a partir dos ensinamentos de [_Roger Melo_](https://www.youtube.com/@RogerMelo), dos quais pude praticar e reforçar algumas técnicas como:
 
 - Consumo de APIs;
 - Requisições Assíncronas.
