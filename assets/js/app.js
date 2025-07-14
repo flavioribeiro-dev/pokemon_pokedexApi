@@ -137,7 +137,7 @@ import { loadPokemons } from "./modules-js/load-pokemons.js"
 // ------------------------------------------------
 	
 const handlePageLoaded = async () => {
-	loadPokemons();
+	await loadPokemons();
 };
 
 window.onload = handlePageLoaded();
