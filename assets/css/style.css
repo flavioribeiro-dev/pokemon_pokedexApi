@@ -1,0 +1,117 @@
+body {
+  background: #12151A;
+  color: #e2e2e2;
+  margin: 0;
+  font-family: rubik;
+}
+
+.container {
+  padding: 30px;
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+h2 {
+  margin-bottom: -0.4em;
+}
+
+.pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 0;
+  padding: 5px;
+}
+
+.card {
+  list-style: none;
+  padding: 15px;
+  text-align: center;
+  border-radius: 25px;
+  position: relative;
+  background-color: #1A1D20;
+  border: .3rem solid var(--type-color);
+}
+
+.card::after {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 35%;
+  border-radius: 58% 42% 64% 36% / 47% 45% 55% 53%;
+  background-color: var(--type-color);
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  animation: bounce 0.5s linear;
+}
+
+.card:hover .card-title {
+  background-color: rgba(238, 238, 238, 0.25);
+}
+
+
+.card-title {
+  text-transform: capitalize;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 0px;
+  font-size: 28px;
+  font-weight: normal;
+  position: relative;
+  z-index: 2;     
+  background-color: rgba(88, 88, 88, 0.25);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card-subtitle {
+  margin-top: 5px;
+  height:45px;
+  color: #666;
+  font-weight: lighter;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image {
+  height: 180px;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+
+  40% {
+    transform: translateY(0px);
+  }
+
+  80% {
+    transform: translateY(-2px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
